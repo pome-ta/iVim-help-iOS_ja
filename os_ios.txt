@@ -136,8 +136,6 @@ other apps to iVim via the share extension. The imported fonts will be
 automatically moved into directory `Library/Fonts/`.
 
 
-iVim also allows users to import and use their own fonts.
-Currently, fonts of type `ttf` or `otf` are supported. You can copy them from other apps to iVim via the share extension. The imported fonts will be automatically moved into directory `Library/Fonts/`.
 
 iVimを使用すると、ユーザーは独自のフォントをインポートして使用することもできます。
 現在、タイプ `ttf`または` otf`のフォントがサポートされています。 共有拡張機能を介して、他のアプリからiVimにコピーできます。 インポートされたフォントは自動的にディレクトリ `Library/Fonts/` に移動されます。
@@ -189,18 +187,45 @@ To input an optional key, drag it towards the center and release. For example,
 if you want to input the key sitting at the top left corner, you make a drag 
 right and down. The start point doesn't really matter.
 
+
+
+
+
+
+限られたスペースでできるだけ多くのキーをカバーするために、拡張キーボードにはコンパクトなボタンが使用されています。
+ボタンの中央にあるキーが主キーであり、タップするだけで入力がトリガーされます。 一部のオプションのキーは、プライマリキーの周りを一周する場合があります。
+オプションのキーを入力するには、中央に向かってドラッグして放します。 たとえば、左上隅にあるキーを入力する場合は、右下にドラッグします。 開始点は実際には重要ではありません。
+
+
+
+
 The Ctrl key ~
 
 Some keys are sticky. For example, the Ctrl key needs to be held down while 
 pressing other keys. Thus it is set up as a sticky key:
 
+
+一部のキーは粘着性があります。 たとえば、Ctrlキーを押しながら他のキーを押す必要があります。 したがって、スティッキーキーとして設定されます:
+
 a. triggering it once will enter the one-off state. After inputting a `C-`
 combination, it will restore automatically.
+
+a. 一度トリガーすると、1回限りの状態になります。`C-` の組み合わせを入力すると、自動的に復元されます。
+
+
 
 b. triggering it twice will make it into the held state. It will keep being
 held until it is tapped again. This is good for continuous `C-` inputs.
 
+
+b. 2回トリガーすると、ホールド状態になります。 もう一度タップするまで保持されます。 これは、連続的な `C-` 入力に適しています。
+
+
+
 c. tapping it in any of the above state will restore its state.
+
+
+c. 上記の状態のいずれかでタップすると、その状態が復元されます。
 
 Hide and show ~ 
 
@@ -208,10 +233,20 @@ You can toggle the extended keyboard by one finger long pressing the screen.
 The extended keyboard will show at launch by default. You can make it hide
 by default by toggle related option in |ios-settings|.
 
+
+画面を1本の指で長押しすると、拡張キーボードを切り替えることができます。
+拡張キーボードは、デフォルトで起動時に表示されます。   |ios-settings| の関連オプションを切り替えることで、デフォルトで非表示にすることができます。
+
+
+
+
 Customize ~
 
 If the default buttons or keys on the extended keyboard don't meet your own
 needs, you can customize them through command |:isetekbd|.
+
+拡張キーボードのデフォルトのボタンまたはキーが自分のニーズを満たさない場合は、コマンド |:isetekbd| を使用してカスタマイズできます。
+
 
 
 ==============================================================================
@@ -219,17 +254,32 @@ needs, you can customize them through command |:isetekbd|.
 
 iVim adds support to multistage input languages such as Chinese or Japanese.
 
+iVimは、中国語や日本語などの多段入力言語のサポートを追加します。
+
+
 Multistage input means keys from the user may have different meaning than
 their literal one. It requires the user to do further confirm to get the final
 result. Besides the asian languages, `alt-`-enabled accentuated Latin input is 
 also an example.
 
+
+多段入力とは、ユーザーからのキーが文字通りのキーとは異なる意味を持つ可能性があることを意味します。 最終結果を得るには、ユーザーがさらに確認する必要があります。 アジア言語に加えて、`alt-` 対応の強調ラテン語入力も例です。
+
+
+
 Input behavior ~
 
 During a multistage input session: 
 
+多段入力セッション中: 
+
 1) the cursor position will not change until the user confirms thus the final
 result is ready (which also means the end of this session).
+
+
+1) ユーザーが確認するまでカーソル位置は変更されないため、最終結果の準備が整います（これはこのセッションの終了も意味します）。
+
+
 
 2) pressing `esc` cancels current input session and discards all keys input so 
 far.

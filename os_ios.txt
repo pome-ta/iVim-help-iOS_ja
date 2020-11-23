@@ -12,9 +12,8 @@ This file documents the particularities of the iOS port of Vim.
 iVim is open source: https://github.com/terrychou/iVim, and you can find 
 useful information on its wiki: https://github.com/terrychou/iVim/wiki
 
-iVimはオープンソースです: https://github.com/terrychou/iVim、そしてあなたは見つけることができます
- そのwikiの有用な情報：https://github.com/terrychou/iVim/wiki
 
+iVimはオープンソースです: https://github.com/terrychou/iVim、そしてそのwikiで有用な情報を見つけることができます: https://github.com/terrychou/iVim/wiki
 
 
 ACKNOWLEGEMENT

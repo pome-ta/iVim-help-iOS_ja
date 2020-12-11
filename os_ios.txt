@@ -189,9 +189,6 @@ right and down. The start point doesn't really matter.
 
 
 
-
-
-
 限られたスペースでできるだけ多くのキーをカバーするために、拡張キーボードにはコンパクトなボタンが使用されています。
 ボタンの中央にあるキーが主キーであり、タップするだけで入力がトリガーされます。 一部のオプションのキーは、プライマリキーの周りを一周する場合があります。
 オプションのキーを入力するには、中央に向かってドラッグして放します。 たとえば、左上隅にあるキーを入力する場合は、右下にドラッグします。 開始点は実際には重要ではありません。
@@ -284,6 +281,8 @@ result is ready (which also means the end of this session).
 2) pressing `esc` cancels current input session and discards all keys input so 
 far.
 
+
+2) `esc`を押すと、現在の入力セッションがキャンセルされ、これまでに入力されたすべてのキーが破棄されます。
 3) tapping on screen ends current input session and confirms the input result 
 so far as the final result.
 
